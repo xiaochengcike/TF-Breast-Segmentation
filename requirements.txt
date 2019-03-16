@@ -1,6 +1,5 @@
 numpy
 nibabel
 Pillow
-tqdm
 
 tensorflow-gpu==2.0.0-alpha0
