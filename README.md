@@ -6,7 +6,6 @@ Convolutional Neural Network for Breast Tumor Segmentation
 The MRI scans and ground truth are layed out in the following structure:
 ```
 ├── Data/
-
 │   ├── GroundTruth/
 │   │   ├── 1001.nii
 │   │   ├── ...
