@@ -6,6 +6,9 @@ class TensorFlowUNet:
 		self.dataset = dataset
 		self.dropout_rate = dropout_rate
 
+		self.weight_dict = self.initialize_weights()
+		self.bias_dict = self.initialize_bias()
+
 	def model_inference(self, x):
 		pass
 
