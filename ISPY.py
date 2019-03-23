@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 class ISPY(AbstractDataset):
-	def __init__(self, data_dir, train_fraction = 0.8, random_batches = False, data_shape = (256, 256)):
+	def __init__(self, data_dir, train_fraction = 0.8, random_batches = False, data_shape = (256, 256, 1)):
 		super().__init__(train_fraction, random_batches, data_shape)
 		self.parse_dataset(data_dir, data_shape)
 
@@ -27,7 +27,7 @@ class ISPY(AbstractDataset):
 		super().shuffle_dataset()
 		self.train_index = 0
 		self.test_index = self.num_samples * self.train_fraction
-		print('Parsed..')
+		print('Parsed.')
 
 	def get_next_train(self, batch_size):
 		return self.get_next_train(batch_size, None, None)
